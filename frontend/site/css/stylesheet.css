@@ -1,0 +1,51 @@
+html{
+    padding: 0px;
+    margin: 0px;
+}
+
+h1{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 42px;
+}
+
+h2{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 32px;
+}
+
+h3{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 28px;
+}
+
+h4{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 24px;
+}
+
+h5{
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+}
+
+.section{
+    height: 100vh;
+    padding: 0px 20px 0px 20px;
+    background-color: black;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.col{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto 0;
+    padding: 1rem;
+}
+
+.test{
+    border: 1px solid black;
+}
