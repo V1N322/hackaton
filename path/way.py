@@ -32,7 +32,6 @@ class Way:
         open_list = [start_point]
         closed_list = []
 
-        input(open_list)
 
         while open_list:
             current_point = min(open_list, key=lambda x: x.get_weight())
