@@ -6,7 +6,7 @@
         "Y": 0.0,
         "Activities": ["sport"],
 
-        "Neightbors": [{
+        "Neighbors": [{
             "Name": "test2",
             "Weight": 0.0
         }]

@@ -6,9 +6,10 @@ class Way:
         self.LODPAC = listOfDictsPointsAndConnections
         self.weight = weight
 
-    def add_segment(self, point, connection):
-        self.LODPAC.append({'point': point, 'connection': connection})
-        self.weight += connection.get_weight()
+    def add_segment(self, point, connections):
+        self.LODPAC.append({'point': point, 'connection': connections})
+        for connection in connections:
+            self.weight += connection.get_weight()
 
     def add_segments(self, segments):
         for segment in segments:
