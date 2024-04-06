@@ -15,7 +15,7 @@ def process_data():
 
 
 # Пример отправки POST запроса
-def send_post_request(serverURL: str = 'localhost/process_data', value: str = '', debug: bool = False):
+def send_post_request(serverURL: str = 'http://vin320il.beget.tech/process_data', value: str = '', debug: bool = False):
     print('Подготовка запроса') if debug else None
     url = serverURL
     data = {'value': value}  # Создаем словарь с данными
@@ -30,3 +30,19 @@ def send_post_request(serverURL: str = 'localhost/process_data', value: str = ''
 
 
 app.run()
+
+# import requests
+# import time
+
+# while True:
+#     url = 'http://vin320il.beget.tech/index.html'
+#     data = {'value': 'Ping'}
+#     response = requests.post(url, json=data)
+
+#     print(response.text)
+#     time.sleep(2)
+
+if __name__ == '__main__':
+    while True:
+        a = input('Введите запрос: ')
+        send_post_request(value=a, debug=True)

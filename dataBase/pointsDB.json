@@ -1,15 +1,115 @@
 [
     {
-        "Name": "test", 
-        "Description": "test",
+        "Name": "KFC", 
+        "Description": "KFC",
         "X": 0.0,
         "Y": 0.0,
-        "Activities": ["sport"],
+        "Activities": ["rest"],
 
         "Neighbors": [{
-            "Name": "test2",
-            "Weight": 0.0
+            "Name": "Hotel",
+            "Weight": 33.3
         }]
 
+    },
+
+    {
+        "Name": "Hotel",
+        "Description": "Hotel",
+        "X": 33.3,
+        "Y": 33.3,
+        "Activities": ["local_culture"],
+
+        "Neighbors": 
+        [
+            {
+                "Name": "KFC",
+                "Weight": 33.3
+            },
+
+            {
+                "Name": "Pizza",
+                "Weight": 54.3
+            },
+
+            {
+                "Name": "Football",
+                "Weight": 87.5
+            }
+        ]
+    
+    
+    },
+
+    {
+        "Name": "Pizza",
+        "Description": "Pizza",
+        "X": 33.3,
+        "Y": 33.3,
+        "Activities": ["rest"],
+
+        "Neighbors": 
+        [
+            {
+                "Name": "Hotel",
+                "Weight": 54.3
+            },
+
+            {
+                "Name": "Final",
+                "Weight": 99.9
+            }
+        ]
+    
+    
+    },
+
+    {
+        "Name": "Football",
+        "Description": "Football",
+        "X": 33.3,
+        "Y": 33.3,
+        "Activities": ["sport"],
+
+        "Neighbors": 
+        [
+            {
+                "Name": "Hotel",
+                "Weight": 87.5
+            },
+
+            {
+                "Name": "Final",
+                "Weight": 89.9
+            }
+        ]
+    
+    
+    },
+
+    {
+        "Name": "Final",
+        "Description": "Final",
+        "X": 33.3,
+        "Y": 33.3,
+        "Activities": ["rest"],
+
+        "Neighbors": 
+        [
+            {
+                "Name": "Hotel",
+                "Weight": 99.9
+            },
+
+            {
+                "Name": "Football",
+                "Weight": 89.9
+            }
+        ]
+    
+    
     }
+
+
+
 ]

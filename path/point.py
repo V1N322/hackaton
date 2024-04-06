@@ -7,7 +7,15 @@ class Point:
         self.name = name
         self.description = description
 
+        self.weight = 3
+
         self._activity = self._get_activity(activities)
+
+    def add_connection(self, connection):
+        self.connections.append(connection)
+
+    def get_weight(self):
+        return self.weight
 
     def get_connections(self):
         return self.connections
@@ -40,6 +48,9 @@ class Point:
     def get_description(self):
         return self.description
     
+    def change_weight(self, weight):
+        self.weight = weight
+
     def change_x(self, x):
         self.coordinates.change_x(x)
     

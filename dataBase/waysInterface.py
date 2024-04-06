@@ -7,7 +7,7 @@ class WaysBuilder:
     def __init__(self, pathToJson ) -> None:
         self.pathToJson = pathToJson
         self.ways = []
-        self.userWays = []
+        self.userWay = None
         self.data = {}
 
     def get_from_json(self):
@@ -32,6 +32,14 @@ class WaysBuilder:
 
         self.ways = points_and_connections
 
-    def generate_ways(self):
-        # TODO: Тут будет происходить процесс перебора и поиска наилучшего пути и вывод его в виде списка путей.
-        pass
+    def get_point_by_name(self, name):
+        for way in self.ways:
+            for point in way.get_LODPAC():
+                if point['point'].get_name == name:
+                    input(f'Я нашел имя: {name}')
+                    return way
+
+
+    def generate_ways(self, userActivities, nameStart, nameFinish):
+        self.ways[0].a_star_search(self.get_point_by_name(nameStart), self.get_point_by_name(nameFinish), userActivities)
+        

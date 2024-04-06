@@ -1,5 +1,7 @@
+from path import point
+
 class Connection:
-    def __init__(self, weight, finishPoint):
+    def __init__(self, weight: float = 0.0, finishPoint: point.Point = None):
         self.weight = weight
         self.finishPoint = finishPoint
 
