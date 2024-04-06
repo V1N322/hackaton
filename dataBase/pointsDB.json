@@ -1,0 +1,15 @@
+[
+    {
+        "Name": "test", 
+        "Description": "test",
+        "X": 0.0,
+        "Y": 0.0,
+        "Activities": ["sport"],
+
+        "Neightbors": [{
+            "Name": "test2",
+            "Weight": 0.0
+        }]
+
+    }
+]
