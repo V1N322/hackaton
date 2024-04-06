@@ -62,8 +62,8 @@ def test_sambiu_krutou_putb():
 def main():
     # json_test()
     # create_way()
-    # test_way_class()
-    test_sambiu_krutou_putb()
+    test_way_class()
+    # test_sambiu_krutou_putb()
 
 
 if __name__ == '__main__':
